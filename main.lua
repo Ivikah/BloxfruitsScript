@@ -1,11 +1,15 @@
--- Get yourself
+-- main.lua - First movement test
+print("Script started!")
+
 local player = game.Players.LocalPlayer
+print("Player found: " .. player.Name)
 
--- Get your character (wait if it doesn't exist yet)
 local character = player.Character or player.CharacterAdded:Wait()
+print("Character found!")
 
--- Get the root part (the part that controls position)
 local root = character:WaitForChild("HumanoidRootPart")
+print("Root part found!")
 
--- Move your character 20 studs up (into the air)
+-- Teleport up 20 studs
 root.CFrame = root.CFrame + Vector3.new(0, 20, 0)
+print("Teleported up!")
