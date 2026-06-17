@@ -1,8 +1,8 @@
 local Players = game:GetService("Players")
 local enemiesFolder = workspace.Enemies
-local hrp = Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
 local x = true
 while x == true do
+local hrp = Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
     local enemyList = enemiesFolder:GetChildren()
     task.wait(0.1)
     for i, enemy in ipairs(enemyList) do
